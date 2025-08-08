@@ -1,0 +1,108 @@
+/* src/components/Todo.css */
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px; /* Space between items */
+}
+
+.todo-item:last-child {
+  margin-bottom: 0; /* No margin after the last item */
+}
+
+.todo-item-completed {
+  background-color: #e6ffe6; /* Light green for completed tasks */
+  color: #888;
+  text-decoration: line-through;
+  font-style: italic;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+}
+
+.todo-item-content { /* Wrapper for text and date */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Stack text and date */
+    align-items: flex-start;
+    padding-right: 10px;
+}
+
+.todo-item-text {
+  font-size: 1.1em;
+  color: #333;
+  cursor: pointer;
+}
+
+.todo-item-completed .todo-item-text {
+  color: #666;
+}
+
+.todo-item-due-date { /* Style for due date */
+    font-size: 0.85em;
+    color: #555;
+    margin-top: 4px;
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 3px 8px;
+    border-radius: 4px;
+    border: 1px solid #d0e0ff;
+}
+
+.todo-item-completed .todo-item-due-date {
+    background-color: #e0f0e0;
+    border-color: #c0e0c0;
+    color: #777;
+}
+
+/* --- Action Buttons Styling --- */
+.todo-item-actions {
+  display: flex;
+  gap: 15px; /* Increased gap for more space between buttons */
+  align-items: center; /* Vertically align the buttons */
+}
+
+.todo-action-button {
+  background: none;
+  border: none;
+  padding: 8px; /* Slightly larger padding around icons */
+  cursor: pointer;
+  border-radius: 8px; /* Soft rounded corners for buttons */
+  transition: background-color 0.2s ease, color 0.2s ease;
+  display: flex; /* For SVG icon centering */
+  justify-content: center;
+  align-items: center;
+  outline: none; /* Remove default browser outline on focus */
+}
+
+/* Optional: Add a subtle background on hover for better visual feedback for all buttons */
+.todo-action-button:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Light gray background on hover */
+}
+
+.todo-action-button .icon-size {
+    width: 20px; /* Slightly smaller SVG icon size */
+    height: 20px;
+}
+
+.todo-action-delete {
+  color: #e74c3c; /* Red for delete icon */
+}
+
+.todo-action-delete:hover {
+  background-color: #ffe6e6; /* Lighter red on hover */
+  color: #c0392b; /* Darker red icon on hover */
+}
+
+.todo-action-edit {
+  color: #3498db; /* Blue for edit icon */
+}
+
+.todo-action-edit:hover {
+  background-color: #e6f7ff; /* Lighter blue on hover */
+  color: #2980b9; /* Darker blue icon on hover */
+}
+/* --- End Action Buttons Styling --- */

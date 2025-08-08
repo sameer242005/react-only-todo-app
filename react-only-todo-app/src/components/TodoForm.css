@@ -1,0 +1,68 @@
+/* src/components/TodoForm.css */
+
+.todo-form {
+  display: flex;
+  gap: 12px; /* Slightly increased gap between elements for the wider layout */
+  margin-bottom: 30px; /* Increased margin below the form */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.todo-input {
+  flex-grow: 1; /* This makes the input take all available space */
+  min-width: 150px; /* Ensures it doesn't collapse too much on smaller screens, allows more initial width to grow from */
+  padding: 16px; /* Slightly increased padding for larger fields */
+  border: none;
+  font-size: 1.15em; /* Slightly larger font size for text */
+  color: #333;
+  outline: none;
+  background-color: #f8f8f8;
+  border-radius: 8px 0 0 8px;
+}
+
+.todo-input::placeholder {
+  color: #999;
+}
+
+.todo-input:focus {
+  box-shadow: inset 0 0 0 2px #007bff;
+}
+
+/* Style for react-datepicker input */
+.todo-datepicker {
+  width: 170px; /* Increased fixed width to accommodate "Due Date (Optional)" clearly */
+  flex-shrink: 0; /* Prevents this element from shrinking */
+  padding: 16px; /* Slightly increased padding */
+  border: none;
+  border-left: 1px solid #eee; /* Separator line */
+  font-size: 1.15em; /* Slightly larger font size */
+  color: #333;
+  outline: none;
+  background-color: #f8f8f8;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.todo-datepicker:focus {
+    box-shadow: inset 0 0 0 2px #007bff;
+}
+
+.todo-button {
+  flex-shrink: 0; /* Prevents button from shrinking */
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 16px 28px; /* Slightly increased padding for a larger button */
+  border: none;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.15em; /* Slightly larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+}

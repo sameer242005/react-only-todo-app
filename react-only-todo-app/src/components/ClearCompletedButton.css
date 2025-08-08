@@ -1,0 +1,22 @@
+/* src/components/ClearCompletedButton.css */
+
+.clear-completed-button {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 0.9em;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+.clear-completed-button:hover {
+  color: #333;
+  background-color: #e0e0e0;
+}
+
+.clear-completed-button:active {
+  background-color: #d0d0d0;
+}

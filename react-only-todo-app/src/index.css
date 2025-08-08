@@ -1,0 +1,48 @@
+/* src/index.css - Global Styles and Resets */
+
+/* Universal Box-Sizing:
+   Ensures that padding and border are included in the element's total width and height.
+   This makes layout calculations much more intuitive and predictable. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* HTML, Body, and Root React Element Resets:
+   Crucial for making the entire page fill the viewport and removing default browser margins/paddings.
+   This allows central containers (like your app-container) to center effectively. */
+html,
+body,
+#root {
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+  width: 100%; /* Ensure they take up the full width available */
+  height: 100%; /* Ensure they take up the full height available */
+  min-height: 100vh; /* Make sure they are at least the height of the viewport */
+  overflow-x: hidden; /* Prevent horizontal scrollbar from appearing */
+}
+
+/* Body Styling:
+   Sets up a default font for the entire application. */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; /* A modern, clean default font stack */
+  line-height: 1.6; /* Standard line spacing for readability */
+  -webkit-font-smoothing: antialiased; /* Smoother font rendering on macOS/iOS */
+  -moz-osx-font-smoothing: grayscale; /* Smoother font rendering on macOS/iOS */
+  text-rendering: optimizeLegibility; /* Optimizes text for readability over speed */
+}
+
+/* Optional: Code specific font */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Optional: Basic link reset (if you use plain <a> tags without Link from react-router-dom) */
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit color from parent */
+}

@@ -1,0 +1,33 @@
+/* src/components/TodoApp.css */
+
+.todo-app-container {
+  background-color: white;
+  padding: 40px; /* Increased padding from 30px */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px; /* Increased max-width from 500px to make it wider */
+  box-sizing: border-box;
+}
+
+.todo-app-title {
+  font-size: 3.5em; /* Increased title size for better visual impact */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 35px; /* Increased margin below title */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app-footer {
+  margin-top: 25px; /* Increased margin above footer */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #666;
+  font-size: 1em; /* Slightly larger font for footer text */
+}
+
+.todo-app-task-count {
+  font-weight: bold;
+}

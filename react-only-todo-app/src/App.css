@@ -1,0 +1,11 @@
+
+/* src/App.css */
+
+.app-container {
+  min-height: 100vh; /* This ensures the container is at least the height of the viewport */
+  background: linear-gradient(to bottom right, #6a1b9a, #3f51b5); /* Your vibrant gradient background */
+  display: flex;
+  align-items: center; /* Centers children vertically within app-container */
+  justify-content: center; /* Centers children horizontally within app-container */
+  padding: 20px; /* Add some padding around the main content */
+}
